@@ -11,7 +11,10 @@
     "astro": "^5.16.2"
   },
   "devDependencies": {
-    "@storybook/html": "^8.6.14",
-    "@storybook/addon-essentials": "^8.6.14"
-  }
+  "@storybook/addon-essentials": "^8.6.14",
+  "@storybook/html": "^8.6.14",
+  "@storybook/react": "^8.6.14",
+  "@storybook/cli": "^8.6.14",
+  "astro": "^5.16.2"
+}
 }
