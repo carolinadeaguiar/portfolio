@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Project name - A case study by Carolina Lead Product Designer">
+  <title>Accessibility Audit | Carolina Lead Product Designer</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Sora:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Carolina portfolio - Home">crlna</a>
+      <nav class="header__nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html#work" class="header__link">See work</a>
+        <a href="about.html" class="header__link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero hero--single" aria-labelledby="project-title">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content animate-fade-in">
+            <span class="hero__caption">Lead Product Designer (IC | Accessibility) · The AA · 2025</span>
+            <h1 id="project-title" class="hero__title">Accessibility Audit — European Breakdown Cover Sales Funnel</h1>
+            <p class="hero__text">Audited and prioritised accessibility issues in a customer-critical, seasonally sensitive sales funnel used by UK customers purchasing European Breakdown Cover, translating WCAG 2.1 requirements into <strong>prioritised, implementation-ready remediation guidance</strong> to reduce risk and improve inclusive access.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 00. TL;DR Quick Summary -->
+    <section class="section" aria-labelledby="summary">
+      <div class="container">
+        <div class="content-block">
+          <h2 id="summary">Summary</h2>
+        </div>
+
+        <!-- Three Column Info -->
+        <div class="three-col">
+          <div class="three-col__item">
+            <h3>Problem</h3>
+            <p>UK customers purchasing European Breakdown Cover encountered accessibility barriers in a seasonally sensitive sales funnel, limiting inclusive access and exposing the business to <strong>compliance, reputational, and abandonment risk</strong>.</p>
+          </div>
+          <div class="three-col__item">
+            <h3>Solution</h3>
+            <p>Led a comprehensive accessibility audit combining automated testing and manual evaluation, documenting issues against WCAG 2.1 and <strong>translating findings into a prioritised, implementation-ready remediation plan</strong>.</p>
+          </div>
+          <div class="three-col__item">
+            <h3>Impact</h3>
+            <p>Improved the experience for <strong>keyboard, screen reader, and low-vision users</strong> across the entire purchase journey, reduced legal and usability risk ahead of peak travel periods, and enabled teams to address high-severity issues efficiently while strengthening accessibility awareness.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01. Final Outcome First -->
+    <div class="container">
+    <figure>
+    <iframe 
+      src="https://docs.google.com/spreadsheets/d/1Lbchz6dTMMh-FjCIZp1q27s6-YunOY_UyR4Ls_GSU6A/edit?usp=sharing" 
+      width="100%" 
+      height="700px" 
+      title="Accessibility audit findings"
+      style="border-radius: var(--radius-md); border: 1px solid #ccc;">
+    </iframe>
+    <figcaption>A prioritised accessibility audit covering the full European Breakdown Cover purchase funnel. Each issue was documented with WCAG reference, severity, user impact, reproduction steps, and implementation guidance, enabling engineering teams to act without additional clarification or rework.
+</figcaption>
+  </figure>
+    </div>
+        
+    <!-- 02. Business Context -->
+    <section class="section" aria-labelledby="business-context">
+      <div class="container">
+        <div class="content-block">
+          <h2 id="business-context">Business Context</h2>
+          <ul>
+            <li>
+                Why this mattered:
+                <ul>
+                <li>
+                    The European Breakdown Cover funnel supports UK customers purchasing cover ahead of time-sensitive travel to Europe. Accessibility failures risked excluding customers, increasing abandonment, and exposing the business to compliance and reputational risk during peak travel periods.
+                </li>
+                </ul>
+        </li>
+
+        <li>
+            Constraints:
+            <ul>
+            <li>Legacy codebase</li>
+            <li>Limited developer availability</li>
+            <li>No scope for visual redesign</li>
+            </ul>
+        </li>
+
+        <li>
+            Success metrics:
+            <ul>
+            <li>WCAG 2.1 A / AA compliance improvements</li>
+            <li>Reduction in high-severity accessibility failures</li>
+            <li>Faster remediation through clear prioritisation and guidance</li>
+            </ul>
+        </li>
+    </ul>
+
+        </div>
+    </section>
+    
+    <!-- 03. The Core Problem -->
+    <section class="section" aria-labelledby="core-problem">
+      <div class="container">
+        <div class="content-block">
+          <h2 id="core-problem">The Core Problem</h2>
+          <p>Multiple accessibility barriers existed across the funnel, disproportionately <strong>affecting keyboard and screen reader users and increasing the risk of failed purchases</strong>.The challenge was not only identifying issues, but making them actionable and prioritised within real delivery constraints.  </p>
+        </div>
+    </section>
+    
+    <!-- 04. Strategy & Approach -->
+    <section class="section" aria-labelledby="strategy-approach">
+      <div class="container">
+        <div class="content-block">
+          <h2 id="strategy-approach">Strategy & Approach</h2>
+          <ul>
+          <li>Conducted automated tests (Axe, Lighthouse, WAVE) and manual checks (Keyboard navigation, VoiceOver, JAWS, Screen settings: Font, Scale, CSS-OFF).</li>
+          <li>Categorised issues by levels of severity and impact.</li>
+          <li>Created a remediation plan with suggested fixes (including front-end snippets where needed).</li>
+          <li>Mapped issues to user impact and funnel stages to support prioritisation.</li>
+          <li>Presented findings to the team and aligned on priorities.</li>
+          <li>Tracked implementation progress and re-tested to validate fixes.</li>
+          </ul>
+        </div>
+    </section>
+    
+    <!-- 05. Key Design Decisions -->
+    <section class="section" aria-labelledby="design-decisions">
+      <div class="container">
+        <div class="content-block">
+          <h2 id="design-decisions">Key Design Decisions</h2>
+          <p>Maximising impact within a short window of development availability drove the following decisions:</p>
+          
+          <!-- Decision #1 -->
+          <h3>Decision #1: Prioritise critical WCAG failures</h3>
+          <ul>
+          <li>Rationale: High-severity issues (keyboard traps, semantic problems, unlabeled items) directly impact usability.</li>
+          <li>Trade-offs: Non-critical enhancements planned for future sprints.</li>
+          </ul>
+          
+          <!-- Decision #2 -->
+          <h3>Decision #2: Provide actionable recommendations for developers</h3>
+          <ul>
+          <li>Rationale: Ensures team can implement fixes quickly without guesswork.</li>
+          <li>Support: Included code snippets and example fixes to reduce friction.</li>
+          </ul>
+          
+        </div>
+    </section>
+
+    <!-- 06. Process Snapshots -->
+<section class="section" aria-labelledby="process-title">
+  <div class="container">
+    <div class="content-block">
+      <h2 id="process-title">Process Snapshots</h2>
+      <p>These snapshots illustrate how accessibility was evaluated and validated throughout the work. Rather than relying on a single tool, I combined automated audits with manual testing to uncover both systematic issues and real interaction failures. This approach helped prioritise fixes, validate WCAG 2.1 A/AA compliance, and ensure changes improved real usability rather than passing checks in isolation.</p>
+    </div>
+    
+    <!-- Large image -->
+    <figure>
+      <img 
+        src="images/project-accessibility/accessibility audit-WAVE_automated.png" 
+        alt="WAVE accessibility audit results highlighting errors and alerts, with Lighthouse results used as a complementary automated check." 
+        class="project-hero-image animate-fade-in"
+      >
+      <figcaption><strong>Automated accessibility testing:</strong> Using WAVE alongside Lighthouse highlights different classes of issues. Each tool surfaces unique failures, reinforcing the value of combining automated audits when validating WCAG compliance.</figcaption>
+    </figure>
+
+    <!-- Two Column Images -->
+    <div class="two-col-images">
+      <figure>
+        <img 
+          src="images/project-accessibility/accessibility audit_automated.png" 
+          alt="axe DevTools automated accessibility audit showing 18 detected errors on the Details page."
+        >
+        <figcaption><strong>Automated accessibility testing:</strong> Checks performed with axe DevTools, supported by Lighthouse, WAVE, and Nu Checker to validate markup quality and WCAG compliance across multiple tools.</figcaption>
+      </figure>
+
+      <figure>
+        <video 
+            src="videos/project-accessibility/radio-groups-arrows_next-previous.mov" 
+            autoplay 
+            loop 
+            muted 
+            playsinline 
+            aria-label="Keyboard navigation through incorrectly grouped radio buttons demonstrating accessibility issues"
+            class="project-hero-image animate-fade-in"
+        >
+        <!-- Fallback text for older browsers -->
+        Your browser does not support the video tag.
+        </video>
+         <script>
+            // Slows the video playback to 0.5x speed
+            document.querySelector('video').playbackRate = 0.5;
+        </script>
+        <figcaption> <strong>Manual accessibility testing:</strong> Evidence of incorrect markup where radio buttons placed in divs are merged into a single navigable group. Suggested fix: use proper <strong>fieldset</strong> and <strong>legend</strong> semantics (preferred), or an appropriate ARIA <strong>role="radiogroup"</strong> where native markup isn’t possible. </figcaption>
+        </figure>
+    </div>
+
+  </div>
+</section>
+
+    
+    <!-- 07. Impact -->
+    <section class="section" aria-labelledby="impact">
+      <div class="container">
+        <div class="content-block">
+          <h2 id="impact">Impact</h2>
+          <p>This audit enabled teams to focus on the most critical accessibility risks first, improving WCAG 2.1 AA compliance while reducing user friction in a revenue-critical funnel.</p>
+          
+          <!-- Results -->
+          <h3>Quantitative Results</h3>
+          <ul>
+          <li>26 accessibility issues identified across the funnel.</li>
+          <li>10 high-severity issues prioritised for remediation. </li>
+          <li>~60% of link clarity and semantics issues resolved within one sprint.</li>
+          <li>Keyboard navigation success improved from ~50% to ~75%.</li>
+          <li>Overall accessibility errors reduced from 26 → 14.</li>
+          </ul>
+          
+          <p> Note: Several remaining issues required deeper platform or third-party changes and were documented for follow-up remediation.
+          </p>
+          
+          <!-- Outcome -->
+          <h3>Qualitative Outcomes</h3>
+          <ul>
+          <li>Improved confidence for keyboard and screen reader users.</li>
+          <li>Reduced risk ahead of peak seasonal traffic.</li>
+          <li>Increased accessibility awareness across design and engineering.</li>
+          <li>Established a repeatable audit and prioritisation model.</li>
+          </ul>
+          
+        </div>
+    </section>
+    
+    <!-- 08. Learnings & Leadership -->
+    <section class="section" aria-labelledby="learnings-leadership">
+      <div class="container">
+        <div class="content-block">
+          <h2 id="learnings-leadership">Learnings & Leadership</h2>
+          </br>
+          
+          <!-- Learnings -->
+          <h3>Learnings</h3>
+          <ul>
+          <li>Accessibility is often overlooked; regular audits are essential to prevent regression.</li>
+          <li>The combination of automated and manual testing is crucial.</li>
+          <li>Small, actionable guidance beats long and generic reports.</li>
+          </ul>
+          
+          <!-- Leadership -->
+          <h3>Leadership</h3>
+          <ul>
+          <li>Mentored team on accessibility best practices.</li>
+          <li>Advocated for accessibility as a design priority, not a compliance checkbox.</li>
+          <li>Established process for ongoing accessibility testing.</li>
+          </ul>
+          
+        </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__text">with 💛 by Carolina</p>
+        <a 
+          href="https://www.linkedin.com/in/carolinadeaguiar" 
+          class="footer__link" 
+          aria-label="Connect on LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
