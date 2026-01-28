@@ -16,6 +16,7 @@
   /* Font Sizes */
   --text-xs: 14px;
   --text-sm: 16px;
+  --text-sm-md: 18px;
   --text-md: 20px;
   --text-l: 22px;
   --text-lg: 26px;
@@ -418,7 +419,6 @@ figure a img:hover {
   margin-top: calc(var(--space-sm) * -1);
   margin-bottom: var(--space-md);
 }
-
 
 .hero__subtitle {
     font-size: var(--text-md);
