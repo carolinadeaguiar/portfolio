@@ -420,8 +420,17 @@ figure a img:hover {
 }
 
 
+.hero__subtitle {
+    font-size: var(--text-md);
+}
+
 .hero__text {
   font-size: var(--text-md);
+  margin-bottom: var(--space-0);
+}
+
+.hero__meta {
+    font-size: var(--text-sm-md);
 }
 
 .hero__image {
