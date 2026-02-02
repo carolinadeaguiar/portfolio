@@ -585,14 +585,20 @@ figure a img:hover {
   font-size: var(--text-sm);
 }
 
+/* ===== TLDR AT GLANCE WRAP ===== */
+
+.tldr {
+  gap: var(--space-xl);
+  padding: var(--space-2xl);
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-md);
+}
+
 /* ===== THREE COLUMN INFO ===== */
 .three-col {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-xl);
-  padding: var(--space-2xl) 0;
-  border-top: 1px solid var(--grey-light);
-  border-bottom: 1px solid var(--grey-light);
 }
 
 @media (min-width: 768px) {
@@ -646,6 +652,8 @@ figure a img:hover {
   color: var(--text-primary);
   width: 100%;/* stacked chips -- delete if I need chip world cloud instead*/
 }
+
+
 
 /* ===== TWO COLUMN IMAGES ===== */
 .two-col-images {
